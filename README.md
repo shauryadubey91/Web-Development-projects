@@ -1,4 +1,4 @@
-# HTML Lab Experiments
+# web Development projects
 
 This repository contains HTML experiments performed in the Web Technology / HTML lab.
 

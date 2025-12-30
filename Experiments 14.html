@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Validation</title>
+</head>
+<body>
+
+<h2>Login Form</h2>
+
+<form onsubmit="return validateForm()">
+    Username:
+    <input type="text" id="user" oninput="checkInput()">
+    <br><br>
+
+    Password:
+    <input type="password" id="pass">
+    <br><br>
+
+    <input type="submit" value="Login">
+</form>
+
+<script>
+function checkInput() {
+    let user = document.getElementById("user").value;
+    if (user.length < 3) {
+        alert("Username must be at least 3 characters");
+    }
+}
+
+function validateForm() {
+    let user = document.getElementById("user").value;
+    let pass = document.getElementById("pass").value;
+
+    if (user == "" || pass == "") {
+        alert("All fields are required");
+        return false;
+    }
+
+    alert("Form Submitted Successfully");
+    return true;
+}
+</script>
+
+</body>
+</html>

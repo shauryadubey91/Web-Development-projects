@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.hidden {
+    display: none;
+}
+.box {
+    width: 200px;
+    height: 100px;
+    background-color: lightblue;
+}
+.active {
+    background-color: lightgreen;
+}
+</style>
+</head>
+<body>
+
+<div id="myBox" class="box"></div>
+<br>
+
+<button onclick="toggleBox()">Show / Hide</button>
+<button onclick="toggleColor()">Toggle Color</button>
+
+<script>
+function toggleBox() {
+    document.getElementById("myBox").classList.toggle("hidden");
+}
+
+function toggleColor() {
+    document.getElementById("myBox").classList.toggle("active");
+}
+</script>
+
+</body>
+</html>

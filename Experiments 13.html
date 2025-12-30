@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Functions & Scope</title>
+</head>
+<body>
+
+<script>
+function scopeDemo() {
+    var x = 10;     
+    let y = 20;     
+    const z = 30;   
+
+    document.write("var x = " + x + "<br>");
+    document.write("let y = " + y + "<br>");
+    document.write("const z = " + z + "<br>");
+}
+
+scopeDemo();
+
+function add(a, b) {
+    return a + b;
+}
+
+let result = add(5, 3);
+document.write("Addition = " + result);
+</script>
+
+</body>
+</html>

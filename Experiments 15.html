@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2 id="title">Original Title</h2>
+<p class="text">Original Paragraph</p>
+
+<button onclick="changeContent()">Change Content</button>
+
+<script>
+function changeContent() {
+    document.getElementById("title").innerHTML = "Title Changed!";
+    document.querySelector(".text").innerHTML = "Paragraph changed using querySelector";
+}
+</script>
+
+</body>
+</html>
